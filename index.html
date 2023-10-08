@@ -141,8 +141,8 @@
         </div>
       </div>
       <!-- Coloured Container -->
-      <div class="bg-[#273B76] h-14 mt-6">
-        <p class="text-white text-center pt-3.5 font-bold text-base">
+      <div class="bg-[#273B76] h-18 mt-7 mb-1 mx-auto py-3.5">
+        <p class="text-white text-center font-bold text-base">
           Rated the top Martha's Vineyard Bed and Breakfast 2017-2023 by Trip
           Advisor
         </p>
@@ -173,20 +173,35 @@
       
     </header>
     <main>
-        <!-- Text Container -->
-        <div class="bg-blue-900 h-40 mb-6 font">
-          <h1 class="text-4xl font-bold text-white text-center pt-4 pb-8">
-            MARTHA’S VINEYARD BED AND BREAKFAST
-          </h1>
-          <div class="max-w-lg mx-auto"><hr /></div>
-          <h4 class="text-center text-white pt-4 text-2xl">
-            ISLAND LUXURY WITH A TWIST
-          </h4>
+        <!-- Text Container for big screen -->
+        <div class="hidden md:flex">
+          <div class="font bg-blue-900 h-40 mb-1  w-full">
+            <h1 class="text-4xl font-bold text-white text-center pt-4 pb-8">
+              MARTHA’S VINEYARD BED AND BREAKFAST
+            </h1>
+            <div class="max-w-lg mx-auto"><hr /></div>
+            <h4 class="text-center text-white pt-4 text-2xl">
+              ISLAND LUXURY WITH A TWIST
+            </h4>
+          </div>
         </div>
+
+        <!-- Text Container for small screen -->
+<div class="flex md:hidden">
+  <div class="bg-blue-900 h-40 my-2 font p-4">
+    <h1 class="text-2xl font-bold text-white text-center pb-7">
+      MARTHA’S VINEYARD BED AND BREAKFAST
+    </h1>
+    <div class="mx-auto w-64"><hr /></div>
+    <h4 class="text-center text-white pt-4 text-base">
+      ISLAND LUXURY WITH A TWIST
+    </h4>
+  </div>
+</div>
 
          <!-- Grid Section-1 -->
     
-      <div class="grid md:grid-cols-3 grid-cols-1 gap-2 mt-3">
+      <div class="grid md:grid-cols-3 grid-cols-1 gap-2 mt-1">
         <!-- Flip Card 1 -->
         <div class="col-span-2">
             <div class="card-container">
