@@ -28,7 +28,8 @@
   <body class="max-w-7xl mx-auto">
     <header>
       <nav>
-        <div class="flex justify-between items-center mx-60 py-5">
+        <!-- For Big Screen -->
+        <div class="md:flex hidden justify-between items-center mx-60 py-5 ">
           <div>
             <p class="text-blue-800">MARTHA'S VINEYARD, MA</p>
           </div>
@@ -54,6 +55,15 @@
                 class="fa-brands fa-pinterest-p border border-black py-1 px-1 text-blue-900"
               ></i>
             </div>
+          </div>
+        </div>
+        <!-- For Mobile Screen -->
+        <div class="md:hidden">
+          <div class="flex justify-center">
+            <img class="mt-6 h-28 w-72" src="/assets/logo.png" alt="" />
+          </div>
+          <div class="flex justify-center mt-3">
+            <p class="bg-blue-800 w-56 h-10 px-9 pt-1 text-xl font-bold text-white" >(508) 696-0859</p>
           </div>
         </div>
       </nav>
@@ -143,9 +153,9 @@
           <div class="swiper-wrapper">
           <!-- Slider -->
           <div class="swiper-slide flex justify-between items-center">
-              <div class="p-1"><img class="w-[800px] h-[300px] object-fill" src="/assets/toper-1.jpg" alt="" ></div>
-              <div class="p-1"><img class="w-[800px] h-[300px] object-fill" src="/assets/toper-2.jpg" alt="" ></div>
-              <div class="p-1"><img class="w-[800px] h-[300px] object-fill" src="/assets/toper-3.jpg" alt="" ></div>
+              <div class="p-1"><img class="w-[800px] h-[300px] object-fill " src="/assets/toper-1.jpg" alt="" ></div>
+              <div class="p-1"><img class="w-[800px] h-[300px] object-fill " src="/assets/toper-2.jpg" alt="" ></div>
+              <div class="p-1"><img class="w-[800px] h-[300px] object-fill " src="/assets/toper-3.jpg" alt="" ></div>
           </div>
           <div class="swiper-slide flex justify-between items-center">
               <div class="p-1"><img class="w-[800px] h-[300px] object-fill" src="/assets/toper-4.jpg" alt="" ></div>
@@ -158,12 +168,11 @@
           <div class="swiper-button-next"></div>    
       </div>
     </div>
-      
-    </div>
+    
+  </div>
       
     </header>
     <main>
-      <div>
         <!-- Text Container -->
         <div class="bg-blue-900 h-40 mb-6 font">
           <h1 class="text-4xl font-bold text-white text-center pt-4 pb-8">
@@ -174,8 +183,152 @@
             ISLAND LUXURY WITH A TWIST
           </h4>
         </div>
+
+         <!-- Grid Section-1 -->
+    
+      <div class="grid md:grid-cols-3 grid-cols-1 gap-2 mt-3">
+        <!-- Flip Card 1 -->
+        <div class="col-span-2">
+            <div class="card-container">
+                <div class="card" id="card">
+                    <div class="front" style="background-image: url('/assets/room-a1.jpg')">
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));"></div>
+                        <div class="front-content flex flex-col ">
+                            <hr>
+                            <div class="text-4xl">Your Room</div>
+                            <hr>
+                            <div>Relax by design</div>
+                        </div>                        
+                    </div> 
+                    <div class="back text-justify text-lg px-10 text-white flex flex-col justify-center items-center bg-orange-400">
+                       <div class="text-center">All rooms at this chic Martha's Vineyard Hotel have en-suite bathrooms, individually controlled heating and A/C, WiFi, hair-dryers, designer Bluetooth radio/speaker, sumptious Frette linens and towels, luxury Gilchrist & Soames toiletries, Nespresso Coffee machine, TV/DVD and contemporary ceiling fans. Come relax at a refreshingly modern Vineyard Haven Hotel.</div>          
+                        <a href="/" class="uppercase bg-white text-black font-semibold w-full text-center py-3 my-3 rounded-md">View Guestrooms</a>                     
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Calender -->
+        <div>
+            <form class="grid grid-cols-2 gap-2">
+                <div class="mb-4">
+                    <label for="checkin" class="block text-gray-700 font-bold mb-2">Check-in</label>
+                    <input type="text" id="datepicker1" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300" required>
+                </div>
+                <div class="mb-4">
+                    <label for="checkout" class="block text-gray-700 font-bold mb-2">Check-out</label>
+                    <input type="text" id="datepicker2" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300" required>
+                </div>
+                <div class="mb-4">
+                    <label for="adults" class="block text-gray-700 font-bold mb-2">Adults(18+)</label>
+                    <select id="adults" name="adults" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="kids" class="block text-gray-700 font-bold mb-2">Kids(16+)</label>
+                    <select id="kids" name="kids" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="mb-4 col-span-2">
+                    <label for="promocode" class="block text-gray-700 font-bold mb-2">Promo Code</label>
+                    <input type="text" id="promocode" name="promocode" placeholder="Promotional Code" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300">
+                </div>
+                <div class="col-span-2">
+                    <button type="submit" class="w-full uppercase text-white px-4 py-2 rounded bg-blue-950 font-bold">Check Availability</button>
+                </div>
+                
+            </form>
+    
+        </div>
+    </div>
+    <div>
+        <!-- Grid Section-2 -->
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-2 mt-2">
+      <!-- Flip Card 2 -->
+      <div class="card-container">
+          <div class="card" id="card2">
+              <div class="front" style="background-image: url('/assets/image\ flip-1.jpg')">
+                  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));"></div>
+                  <div class="front-content flex flex-col ">
+                      <hr>
+                      <div class="text-2xl">AMENITIES & SERVICES</div>
+                      <hr>
+                      <div class="pt-7">we're an award-winneg inn</div>
+                  </div>
+                  
+              </div> 
+              <div class="back text-justify text-lg px-10 text-white flex flex-col justify-center items-center bg-gray-400">
+                 <div class="text-center">This secluded Martha's Vineyard retreat set on 2 acres of gardens provides a unique island experience with the option to enjoy your entire vacation without leaving the comfort and sanctuary of the property.</div>
+              
+                  <a href="/" class="uppercase bg-white text-black font-semibold w-full text-center py-3 my-3 rounded-md">View Guestrooms</a>
+                
+              </div>
+          </div>
       </div>
+      <!-- Flip Card 3 -->
+      <div class="card-container">
+          <div class="card" id="card3">
+              <div class="front" style="background-image: url('/assets/image\ flip-2.jpg')">
+                  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));"></div>
+                  <div class="front-content flex flex-col ">
+                      <hr>
+                      <div class="text-4xl">EXPLORE THE INN</div>
+                      <hr>
+                      <div class="pt-7">Upscale Boutique Lodging</div>
+                  </div>
+                  
+              </div> 
+              <div class="back text-justify text-lg px-10 text-white flex flex-col justify-center items-center bg-orange-900">
+                 <div class="text-center">Treat yourself to a luxury retreat at this Martha's Vineyard Boutique Hotel. A refreshingly modern interior design and expansive outdoor space, this exquisite bed and breakfast provides a relaxing escape from the crowds. Winner of the prestigious travel award from Yankee Magazine.</div>
+              
+                  <a href="/" class="uppercase bg-white text-black font-semibold w-full text-center py-3 my-3 rounded-md">View Guestrooms</a>
+                
+              </div>
+          </div>
+      </div>
+      <!-- Contact Us -->
+      <div class="flex flex-col justify-center items-center bg-zinc-800 text-white py-10">
+          <div class="text-2xl uppercase">Contact Us</div>
+          <div class="">(508) 696-0859</div>
+          <div class=""><a href="#">lux@nobnocket.com</a></div>
+          <div class="flex justify-between mt-3">
+              <div>
+                  <a href="/"><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><path fill="#fff" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg></a>
+                 
+              </div>
+              <div class="ml-2">
+                  <a href="/">
+                       <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><path fill="#fff" d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/></svg>
+                  </a>
+                 
+              </div>
+              <div class="ml-2">
+                  <a href="/">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><path fill="#fff" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z"/></svg>
+                  </a>
+              </div>
+          </div>
+          <div class="uppercase text-end mt-3 text-2xl font-semibold">BE OUR GUEST</div>
+          <div class="relative mt-3">
+              <input type="text" class="border border-gray-300 rounded py-2 px-4 pr-10 text-black" placeholder="Enter your email">
+              <button class="absolute right-3 top-2/4 transform -translate-y-2/4">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><path fill="#172554" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+              </button>
+          </div>
+          <div class="mx-10 mt-5 text-center text-sm">Receive updates and exclusive offers directly in your inbox. Unsubscribe at any time. We never spam our guests.</div>
+      </div>
+  </div>
+    </div>
     </main>
+      
+   
     <footer></footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/JS/script.js"></script>
