@@ -39,3 +39,11 @@
   text-align: center;
   color: #fff;
 }
+
+.press {
+  text-decoration: underline;
+}
+
+.press:hover {
+  text-decoration: none;
+}

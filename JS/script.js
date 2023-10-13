@@ -69,14 +69,6 @@ document.getElementById("card6").addEventListener("mouseenter", function () {
 document.getElementById("card6").addEventListener("mouseleave", function () {
   this.style.transform = "rotateY(0deg)";
 });
-// Flip Card 7
-document.getElementById("card7").addEventListener("mouseenter", function () {
-  this.style.transform = "rotateY(180deg)";
-});
-
-document.getElementById("card7").addEventListener("mouseleave", function () {
-  this.style.transform = "rotateY(0deg)";
-});
 // Flip Card 8
 document.getElementById("card8").addEventListener("mouseenter", function () {
   this.style.transform = "rotateY(180deg)";
