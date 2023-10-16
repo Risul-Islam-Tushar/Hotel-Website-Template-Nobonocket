@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <title>Document</title>
+  </head>
+  <body class="max-w-7xl mx-auto">
+    <header>
+      <nav>
+        <!-- For Big Screen -->
+        <div
+          class="md:flex hidden justify-between items-center md:mx-10 lg:mx-60 py-5"
+        >
+          <div>
+            <p class="text-blue-800">MARTHA'S VINEYARD, MA</p>
+          </div>
+          <div>
+            <a href="/index.html">
+              <img
+                class="h-28 w-72"
+                title="The Nobnocket Boutique Inn"
+                src="/assets/logo.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <p class="text-blue-800">(508) 696-0859</p>
+            </div>
+            <div>
+              <a href="#" title="Facebook">
+                <i
+                  class="fa-brands fa-facebook-f border border-black py-1 px-1 text-blue-900"
+                ></i
+              ></a>
+            </div>
+            <div>
+              <a href="#" title="Instagram">
+                <i
+                  class="fa-brands fa-instagram border border-black py-1 px-1 text-blue-900"
+                ></i
+              ></a>
+            </div>
+            <div>
+              <a href="#" title="Pinterest">
+                <i
+                  class="fa-brands fa-pinterest-p border border-black py-1 px-1 text-blue-900"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- For Mobile Screen -->
+        <div class="md:hidden">
+          <div class="flex justify-center">
+            <img class="mt-6 h-28 w-72" src="/assets/logo.png" alt="" />
+          </div>
+          <div class="flex justify-center mt-3">
+            <p
+              class="bg-blue-800 w-56 h-10 px-9 pt-1 text-xl font-bold text-white"
+            >
+              (508) 696-0859
+            </p>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <!-- large screen -->
+        <div class="max-w-4xl ml-auto mr-auto uppercase text-prime my-3">
+          <ul class="md:flex justify-between text-xl hidden font-light px-6">
+            <li><a href="/">ROOMS</a></li>
+            <li><a href="/Pages/Experiance.html">EXPERIENCE</a></li>
+            <li><a href="/Pages/The-Vineyard.html">THE VINEYARD</a></li>
+            <li><a href="/">PHOTOS</a></li>
+            <li><a href="/">CHECK AVAILABILITY</a></li>
+            <li id="more_btn_l">
+              <div class="flex justify-between items-center">
+                More
+                <span class="ml-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="#273B76"
+                      d="M64 144a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM64 464a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm48-208a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </li>
+          </ul>
+          <!-- for small screen -->
+          <div id="more_btn_s">
+            <div
+              class="flex md:hidden justify-around items-center text-xl max-w-[100px] ml-auto mr-auto"
+            >
+              Menu
+              <span class="ml-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="#273B76"
+                    d="M64 144a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM64 464a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm48-208a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <!-- items -->
+          <div
+            class="w-full flex justify-center items-center flex-col text-xl font-light"
+            id="drop"
+          >
+            <div class="md:hidden block py-2"><a href="/">ROOMS</a></div>
+            <div class="md:hidden block py-2">
+              <a href="/Pages/Experiance.html">EXPERIENCE</a>
+            </div>
+            <div class="md:hidden block py-2">
+              <a href="/Pages/The-Vineyard.html">THE VINEYARD</a>
+            </div>
+            <div class="md:hidden block py-2"><a href="/">PHOTOS</a></div>
+            <div class="md:hidden block py-2">
+              <a href="/">CHECK AVAILABILITY</a>
+            </div>
+            <div class="py-2"><a href="#">EXPLORE THE INN</a></div>
+            <div class="py-2"><a href="#">AMENITIES & SERVICES</a></div>
+            <div class="py-2"><a href="#">PRESS & REVIEWS</a></div>
+            <div class="py-2"><a href="#">PASSION PASSPORT</a></div>
+            <div class="py-2"><a href="#">OFFERS</a></div>
+            <div class="py-2"><a href="#">EVENTS AT NOBNOCKET</a></div>
+            <div class="py-2"><a href="#">MARTHA'S VINEYARD BLOG</a></div>
+            <div class="py-2"><a href="#">FAQS</a></div>
+            <div class="py-2"><a href="#">POLICIES</a></div>
+            <div class="py-2"><a href="#">LOCATION & CONTACT</a></div>
+            <div class="py-2"><a href="#">GIFT CERTIFICATES</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-----------------Text Container for large screen ------------->
+      <div class="hidden md:flex">
+        <div class="font bg-blue-900 h-40 mb-1 w-full">
+          <h1 class="text-4xl font-bold text-white text-center pt-4 pb-4">
+            AMENITIES & SERVICES
+          </h1>
+          <div class="max-w-6xl mx-auto"><hr /></div>
+          <h4 class="text-center text-white pt-4 text-base">
+            Delivering service excellence and serenity in a relaxing hideaway.
+            Winner of Condé Nast Readers' Choice Award 2022 in "Best North-East
+            USA Hotels" category.
+          </h4>
+        </div>
+      </div>
+
+      <!------------------ Text Container for small screen ------------>
+      <div class="flex md:hidden">
+        <div class="bg-blue-900 h-60 my-2 font p-4">
+          <h1 class="text-3xl font-bold text-white text-center pb-4">
+            AMENITIES & SERVICES
+          </h1>
+          <div class="mx-auto w-64"><hr /></div>
+          <h4 class="text-center text-white pt-2 text-base">
+            Delivering service excellence and serenity in a relaxing hideaway.
+            Winner of Condé Nast Readers' Choice Award 2022 in "Best North-East
+            USA Hotels" category.
+          </h4>
+        </div>
+      </div>
+      <!--------------------------- Grid section-1 --------------------------->
+      <div class="flex justify-between flex-col md:flex-row mt-2">
+        <!---------- Image Container ---------->
+        <div class="card-container md:w-2/3 w-full mr-2">
+          <div class="card">
+            <div
+              class="front"
+              style="background-image: url('/assets/pleasure.jpg')"
+            >
+              <div class="front-content flex flex-col px-5">
+                <hr />
+                <div class="text-3xl">PLEASURE</div>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--------- text Container ---------->
+        <div class="card-container md:w-1/3 w-full">
+          <div class="card">
+            <div
+              class="front bg-lime-700 flex flex-col text-white pe-0 md:pe-20"
+            >
+              <ul class="text-base" style="list-style-type: square">
+                <li>Daily gourmet breakfast</li>
+                <li>Beach towels</li>
+                <li>Beach chairs</li>
+                <li>Complimentary bikes</li>
+                <li>In-room Nespresso Coffee Machines</li>
+                <li>Secluded location</li>
+                <li>Locally roasted organic coffee</li>
+                <li>Sun patios</li>
+                <li>Complimentary hot & cold drinks</li>
+                <li>DVD library, TV, games and books</li>
+                <li>In-room massages</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------------- Grid section-2 --------------------------->
+      <div class="flex justify-between flex-col-reverse md:flex-row mt-2">
+        <!-------------- Text Container-------------->
+        <div class="card-container md:w-1/3 w-full">
+          <div class="card">
+            <div class="front bg-neutral-400 flex flex-col text-white p-8">
+              <ul class="text-base" style="list-style-type: square">
+                <li>Sumptuous beds</li>
+                <li>Frette luxury linens</li>
+                <li>Gilchrist & Soames "London Collection" toiletries</li>
+                <li>In-room air-conditioning</li>
+                <li>Fireplaces</li>
+                <li>Expansive guest common areas</li>
+                <li>Cozy Bath Robes</li>
+                <li>Hairdryer</li>
+                <li>Turndown service</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!------------- Image Container ------------->
+        <div class="card-container md:w-2/3 w-full md:ml-2">
+          <div class="card">
+            <div
+              class="front"
+              style="background-image: url('/assets/Comfort.jpg')"
+            >
+              <div class="front-content flex flex-col px-5">
+                <hr />
+                <div class="text-3xl">COMFORT</div>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------------- Grid section-3 --------------------------->
+      <div class="flex justify-between flex-col md:flex-row mt-2">
+        <!--------------- Image Container -------------->
+        <div class="card-container md:w-2/3 w-full mr-2">
+          <div class="card">
+            <div
+              class="front"
+              style="background-image: url('/assets/convineance.jpg')"
+            >
+              <div class="front-content flex flex-col px-5">
+                <hr />
+                <div class="text-3xl">THE TWIST</div>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--------------- text Container --------------->
+        <div class="card-container md:w-1/3 w-full">
+          <div class="card">
+            <div class="front bg-zinc-600 flex flex-col text-white p-8">
+              <ul
+                class="text-sm md:text-sm pl-5"
+                style="list-style-type: square"
+              >
+                <li>Close to ferry</li>
+                <li>Free on-site parking</li>
+                <li>Complimentary WiFi</li>
+                <li>Bluetooth speaker/radio</li>
+                <li>Close to restaurants & shops</li>
+                <li>Baggage assistance</li>
+                <li>Personalized concierge service</li>
+                <li>
+                  Gift Shop with local items (Cut Paper Island tea towels, local
+                  books, Stefanie Wolf jewelry, candles, cards)
+                </li>
+                <li>Close to Beach Road Weekend music festival venue</li>
+                <li>Close to Martha's Vineyard Museum</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------------- Grid section-4 --------------------------->
+      <div class="flex justify-between flex-col md:flex-row mt-2">
+        <!--------------Image Container -------------->
+        <div class="card-container md:w-1/3 w-full">
+          <div class="card">
+            <div class="front bg-neutral-400 flex flex-col text-white"></div>
+          </div>
+        </div>
+        <!------------- Text Container ------------->
+        <div class="card-container md:w-2/3 h-full w-full ml-2">
+          <div class="card">
+            <h1 class="text-3xl font-light md:my-0 lg:my-2">ABOUT US</h1>
+            <p class="text-base md:text-xs lg:text-base font-extralight pe-8">
+              Annabelle and Simon are "wash-ashores" from England via Cape Cod.
+              Annabelle is originally from London and Simon is from Liverpool.
+              They created and developed an award winning Boutique Inn on Cape
+              Cod that won Boston Magazine's prestigious "Best Of Boston" award
+              for "Best Hotel/Inn on Cape Cod" as well as awards and recognition
+              from other leading travel publications. Here they discovered a gem
+              of a building that they were able to turn into their vision of
+              "island luxury with a twist", a modern Martha's Vineyard B&B
+              within a stately Arts & Crafts manor house. One of the draws was
+              its unique location. Situated a short walk from the ferry and
+              downtown Vineyard Haven it is hidden away in a secluded retreat
+              surrounded by gardens, trees and the sound of songbirds. They
+              purchased the inn January 2016 and set about completely renovating
+              the interiors. In May 2016 it reopened as Nobnocket Boutique Inn,
+              an upscale Boutique Hotel design property. The inn has won
+              accolades from Condé Nast, Condé Nast Johansens, Yankee Magazine,
+              Boston Globe and Boston Magazine. They are owner operators and
+              live on property to be able to give you personalized and truly
+              local service and to be able to live their dream of a life on
+              Martha's Vineyard.
+              <br />
+              <br />
+              Simon is an avid Liverpool FC supporter and Annabelle's allegiance
+              is with Chelsea FC, which leads to at least two difficult days
+              each year!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------------- Grid Section-5 --------------------------->
+      <div class="grid md:grid-cols-3 grid-cols-1 gap-2 mt-2">
+        <div class="bg-cyan-800 p-10 text-white">
+          <div class="pb-4 text-xl font-medium">
+            <h1>AVAILABILITY</h1>
+          </div>
+          <form class="grid grid-cols-2 gap-2">
+            <div class="mb-4">
+              <label for="checkin" class="block mb-2">Check-in</label>
+              <input
+                type="text"
+                id="datepicker1"
+                class="w-full px-3 py-2 border text-black border-gray-300 rounded-none focus:outline-none focus:ring focus:border-blue-300"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="checkout" class="block mb-2">Check-out</label>
+              <input
+                type="text"
+                id="datepicker2"
+                class="w-full px-3 py-2 border text-black border-gray-300 rounded-none focus:outline-none focus:ring focus:border-blue-300"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="adults" class="block mb-2">Adults(18+)</label>
+              <select
+                id="adults"
+                name="adults"
+                class="w-full px-3 py-2 border text-black border-gray-300 rounded-none focus:outline-none focus:ring focus:border-blue-300"
+              >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="mb-4">
+              <label for="kids" class="block mb-2">Kids(16+)</label>
+              <select
+                id="kids"
+                name="kids"
+                class="w-full px-3 py-2 border text-black border-gray-300 rounded-none focus:outline-none focus:ring focus:border-blue-300"
+              >
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+            <div class="mb-4 col-span-2">
+              <label for="promocode" class="block mb-2">Promo Code</label>
+              <input
+                type="text"
+                id="promocode"
+                name="promocode"
+                placeholder="Promotional Code"
+                class="w-full px-3 py-2 border text-black border-gray-300 rounded-none focus:outline-none focus:ring focus:border-blue-300"
+              />
+            </div>
+            <div class="col-span-2">
+              <button
+                type="submit"
+                class="w-full uppercase text-white px-4 py-2 rounded-none bg-blue-950"
+              >
+                Check Availability
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="bg-sky-600 p-10">
+          <div class="text-white font-normal text-2xl my-5">
+            <h1>NEWSLETTER</h1>
+          </div>
+          <div class="relative mt-3">
+            <input
+              type="text"
+              class="border border-gray-300 rounded-none py-3 pl-2 w-48 md:w-62 lg:w-72 text-black"
+              placeholder="Your Email Address"
+            />
+            <button
+              class="absolute top-2/4 transform -translate-y-2/4 -translate-x-7"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1.5em"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#172554"
+                  d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="my-5 text-white">
+            <h1 class="font-normal text-2xl">OFFERS</h1>
+            <ul class="pl-5 pt-4 press" style="list-style-type: square">
+              <li><a href="">Babymoon</a></li>
+              <li>
+                <a href="">Thanksgiving 2023 – A new getaway tradition</a>
+              </li>
+              <li><a href="">Girlfriends Getaway</a></li>
+              <li><a href="">Romance Package</a></li>
+              <li>
+                <a href="">No Car & Go Green – Martha’s Vineyard Eco Package</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-sky-950 p-10">
+          <div class="text-white font-normal text-2xl my-5">
+            <h1>CONTACT US</h1>
+          </div>
+          <div class="flex gap-2">
+            <div><img src="/assets/phone.png" alt="" /></div>
+            <div class="text-white">(508) 696-0859</div>
+          </div>
+          <div class="flex gap-2 pt-5 pl-1">
+            <div>
+              <svg
+                class="w-4"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1.5em"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#fff"
+                  d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                />
+              </svg>
+            </div>
+            <div class="text-white">
+              <p>lux@nobnocket.com</p>
+            </div>
+          </div>
+          <div class="pt-6 text-white">
+            <h1 class="text-lg font-semibold">Nobnocket Boutique Inn</h1>
+            <p>
+              60 Mount Aldworth Rd,<br />
+              Vineyard Haven MA 02568
+            </p>
+
+            <p class="press pt-10"><a href="#">Get Directions</a></p>
+          </div>
+          <div class="flex pt-3 gap-3">
+            <div>
+              <a href="#" title="Facebook">
+                <i
+                  class="fa-brands fa-facebook-f border border-white py-1 px-1 text-white"
+                ></i
+              ></a>
+            </div>
+            <div>
+              <a href="#" title="Instagram">
+                <i
+                  class="fa-brands fa-instagram border border-white py-1 px-1 text-white"
+                ></i
+              ></a>
+            </div>
+            <div>
+              <a href="#" title="Pinterest">
+                <i
+                  class="fa-brands fa-pinterest-p border border-white py-1 px-1 text-white"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="bg-stone-700 grid justify-items-center mt-2">
+        <div class="pt-10">
+          <img class="h-16" src="/Footer/logo-sm.gif" alt="" />
+        </div>
+        <div class="flex pt-10 gap-9">
+          <img class="w-24" src="/Footer/hotel.gif" alt="" />
+          <img class="w-32" src="/Footer/CTW.gif" alt="" />
+        </div>
+        <div class="p-5 md:pt-10">
+          <img src="/Footer/Awards.gif" alt="" />
+        </div>
+        <div class="flex text-sm text-white pt-8 mx-8">
+          <p class="text-center">
+            <a href="/" class="hover:text-gray-300 m-2">ROOMS</a>
+            <a href="/Pages/Experiance.html" class="hover:text-gray-300 m-2"
+              >EXPERIENCE</a
+            >
+            <a href="/Pages/The-Vineyard.html" class="hover:text-gray-300 m-2"
+              >THE VINEYARD</a
+            >
+            <a href="/" class="hover:text-gray-300 m-2">PHOTOS</a>
+            <a href="/" class="hover:text-gray-300 m-2">THE INN</a>
+            <a href="/" class="hover:text-gray-300 m-2">AMENITIES</a>
+            <a href="/" class="hover:text-gray-300 m-2">OFFERS</a>
+            <a href="/" class="hover:text-gray-300 m-2">BLOG</a>
+            <a href="/" class="hover:text-gray-300 m-2">FAQS</a>
+            <a href="/" class="hover:text-gray-300 m-2">POLICIES </a>
+            <a href="/" class="hover:text-gray-300 m-2">CONTACT</a>
+          </p>
+        </div>
+        <div
+          class="pt-8 pb-16 flex flex-col md:flex-row text-center text-sm text-white font-thin"
+        >
+          <div>
+            <p>© 2023 The Nobnocket Boutique Inn</p>
+          </div>
+          <div class="px-1 hidden md:flex">/</div>
+          <div>Cape Cod Web Design by Community Web Development Inc</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/JS/script.js"></script>
+  </body>
+</html>
