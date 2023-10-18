@@ -77,10 +77,3 @@ document.getElementById("card8").addEventListener("mouseenter", function () {
 document.getElementById("card8").addEventListener("mouseleave", function () {
   this.style.transform = "rotateY(0deg)";
 });
-
-$(function () {
-  $("#datepicker1").datepicker();
-});
-$(function () {
-  $("#datepicker2").datepicker();
-});

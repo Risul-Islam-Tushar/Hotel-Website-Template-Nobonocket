@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -16,10 +20,7 @@
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <link rel="stylesheet" href="/CSS/index.css" />
     <link rel="icon" href="/assets/favicon-16x16.png" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-    />
+
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -27,6 +28,13 @@
     />
 
     <title>Marthas Vineyard Hotel</title>
+    <style>
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
   </head>
   <body class="max-w-7xl mx-auto">
     <header>
@@ -213,16 +221,13 @@
           <div class="card-container swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                <img src="/assets/gp-1.jpg" />
               </div>
               <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                <img src="/assets/gp-2.jpg" />
               </div>
               <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                <img src="/assets/gp-3.jpg" />
               </div>
             </div>
             <div class="swiper-button-next"></div>
@@ -233,18 +238,29 @@
         <!--------- text Container ---------->
         <div class="card-container md:w-1/2 w-full">
           <div class="card">
-            <div class="front bg-emerald-950 flex flex-col text-white p-5">
-              <ul class="text-base" style="list-style-type: square">
-                <li>Luxurious beds</li>
-                <li>Frette Linens</li>
-                <li>Down and down-alternative bedding</li>
-                <li>Plush towels, cotton waffle robes</li>
-                <li>Turn down service</li>
-                <li>Plantation shutters with screened windows</li>
-                <li>Ceiling fans</li>
-                <li>Individually controlled air-conditioning</li>
-                <li>Bluetooth speaker & radio</li>
+            <div
+              class="bg-sky-700 flex flex-col text-white h-full px-2 md:px-6 pt-2"
+            >
+              <h1 class="text-2xl font-light mx-14 md:mx-0">
+                LUXURY GRAND/ $310-$725
+              </h1>
+              <p class="py-2">
+                These are rooms for those seeking a lavish experience. Luxury
+                Grand rooms offer pure elegance. Bathrooms are large with double
+                vanities, stand-alone soaking tubs and large marble & glass
+                walk-in showers.
+              </p>
+              <ul class="text-base pl-5" style="list-style-type: square">
+                <li>King bed</li>
+                <li>Nespresso maker</li>
+                <li>
+                  Table and chairs to enjoy an in-room leisurely breakfast
+                </li>
+                <li>Original brick gas insert fireplace</li>
               </ul>
+              <button class="border w-32 h-10 mt-5 uppercase font-semibold">
+                Book Now
+              </button>
             </div>
           </div>
         </div>
@@ -255,17 +271,36 @@
         <!-------------- Text Container-------------->
         <div class="card-container md:w-1/2 w-full">
           <div class="card">
-            <div class="front bg-orange-800 flex flex-col text-white p-5">
-              <ul class="text-base" style="list-style-type: square">
-                <li>Complimentary award-winning gourmet breakfast</li>
-                <li>Served en-suite, in sunroom or on patio</li>
-                <li>Local freshly ground Chilmark Coffee</li>
-                <li>Home-made items & freshly baked goodies</li>
-                <li>Locally sourced produce</li>
-                <li>Signature egg dishes</li>
-                <li>Martha's Vineyard Home-made Jams</li>
-                <li>Served 8.30am – 9.30am</li>
+            <div
+              class="bg-red-400 flex flex-col text-white h-full px-2 md:px-6 pt-2"
+            >
+              <h1 class="text-2xl font-light mx-14 md:mx-0">
+                LUXURY SUITE / $290-$699
+              </h1>
+              <p class="py-2 text-sm">
+                For those who enjoy a bedroom and a separate sitting room these
+                spacious suites allow for true relaxation on your New England
+                getaway. They offer a unique blend of refined comfort & modern
+                design. The en-suite bathrooms have chic glass & tile walk-in
+                showers and custom granite counters. One room also has a gas
+                fireplace.
+              </p>
+              <ul
+                class="text-sm md:text-base pl-5"
+                style="list-style-type: square"
+              >
+                <li>King bed</li>
+                <li>Nespresso maker</li>
+                <li>
+                  Table and chairs to enjoy an in-room leisurely breakfast
+                </li>
+                <li>Two TVs</li>
               </ul>
+              <button
+                class="border w-32 h-10 mt-2 md:mt-5 uppercase font-semibold"
+              >
+                Book Now
+              </button>
             </div>
           </div>
         </div>
@@ -275,16 +310,13 @@
           <div class="card-container swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                <img src="/assets/gp2-1.jpg" />
               </div>
               <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                <img src="/assets/gp2-2.jpg" />
               </div>
               <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                <img src="/assets/gp2-3.jpg" />
               </div>
             </div>
             <div class="swiper-button-next"></div>
@@ -302,16 +334,13 @@
           <div class="card-container swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                <img src="/assets/gp3-1.jpg" />
               </div>
               <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                <img src="/assets/gp3-2.jpg" />
               </div>
               <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                <img src="/assets/gp3-3.jpg" />
               </div>
             </div>
             <div class="swiper-button-next"></div>
@@ -322,25 +351,26 @@
         <!--------------- text Container --------------->
         <div class="card-container md:w-1/2 w-full">
           <div class="card">
-            <div class="front bg-slate-800 flex flex-col text-white p-5">
-              <ul
-                class="text-sm md:text-sm lg:text-base"
-                style="list-style-type: square"
-              >
-                <li>Owner run & operated upscale New England Boutique B&B</li>
-                <li>Modern curated interior design</li>
-                <li>Eco-friendly</li>
-                <li>Partners with "Clean The World" Recycling Program</li>
-                <li>Walk to town, ferry & lagoon</li>
-                <li>Breakfast served in bed</li>
-                <li>Large lawn, wooded grounds & perennial gardens</li>
-                <li>Complimentary bikes</li>
-                <li>24hr tea/coffee area</li>
-                <li>Massage services</li>
-                <li>Complimentary garden yoga (July/August)</li>
-                <li>Yoga mats</li>
-                <li>Martha's Vineyard Hip Hideaway</li>
+            <div
+              class="bg-red-400 flex flex-col text-white h-full px-2 md:px-6 pt-2"
+            >
+              <h1 class="text-2xl font-light mx-14 md:mx-0">
+                DELUXE / $245-$545
+              </h1>
+              <p class="py-5">
+                Contemporary, bright and bold rooms with bespoke en-suite
+                bathrooms that also include tiled glass walk in showers.
+              </p>
+              <ul class="text-base pl-5" style="list-style-type: square">
+                <li>King bed</li>
+                <li>Nespresso maker</li>
+                <li>
+                  Table and chairs to enjoy an in-room leisurely breakfast
+                </li>
               </ul>
+              <button class="border w-32 h-10 mt-10 uppercase font-semibold">
+                Book Now
+              </button>
             </div>
           </div>
         </div>
