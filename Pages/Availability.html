@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <link rel="icon" href="/assets/favicon-16x16.png" />
+    <title>Marthas Vineyard Hotel</title>
+  </head>
+  <body class="max-w-7xl mx-auto">
+    <header>
+      <nav>
+        <!-- For Big Screen -->
+        <div
+          class="md:flex hidden justify-between items-center md:mx-10 lg:mx-60 py-5"
+        >
+          <div>
+            <p class="text-blue-800">MARTHA'S VINEYARD, MA</p>
+          </div>
+          <div>
+            <a href="/index.html">
+              <img
+                class="h-28 w-72"
+                title="The Nobnocket Boutique Inn"
+                src="/assets/logo.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <p class="text-blue-800">(508) 696-0859</p>
+            </div>
+            <div>
+              <a href="#" title="Facebook">
+                <i
+                  class="fa-brands fa-facebook-f border border-black py-1 px-1 text-blue-900"
+                ></i
+              ></a>
+            </div>
+            <div>
+              <a href="#" title="Instagram">
+                <i
+                  class="fa-brands fa-instagram border border-black py-1 px-1 text-blue-900"
+                ></i
+              ></a>
+            </div>
+            <div>
+              <a href="#" title="Pinterest">
+                <i
+                  class="fa-brands fa-pinterest-p border border-black py-1 px-1 text-blue-900"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <!-- large screen -->
+        <div class="max-w-4xl ml-auto mr-auto uppercase text-prime my-3">
+          <ul class="md:flex justify-between text-xl hidden font-light px-6">
+            <li><a href="/">ROOMS</a></li>
+            <li><a href="/Pages/Experiance.html">EXPERIENCE</a></li>
+            <li><a href="/Pages/The-Vineyard.html">THE VINEYARD</a></li>
+            <li><a href="/Pages/Photos.html">PHOTOS</a></li>
+            <li><a href="/Pages/Availability.html">CHECK AVAILABILITY</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="border flex justify-between mb-6">
+        <div class="hidden md:flex md:w-3/4 w-full mr-2 border-8">
+          <img src="/assets/availability.jpg" alt="" />
+        </div>
+        <div class="md:w-1/4 w-full">
+          <div class="flex md:hidden">
+            <h1
+              class="text-white text-2xl font-medium bg-zinc-800 w-full h-14 text-start pt-2 pl-2"
+            >
+              Nobonocket Boutique Inn
+            </h1>
+          </div>
+          <div class="text-black pt-2 pl-3 pr-2">
+            <div class="pb-4 text-3xl font-light uppercase">
+              <h1>CHECK AVAILABILITY</h1>
+            </div>
+            <form class="grid grid-cols-2 gap-2">
+              <div class="mb-4">
+                <label for="checkin" class="block mb-2">Check-in</label>
+                <input
+                  type="text"
+                  id="datepicker1"
+                  class="w-full px-3 py-2 border text-black border-gray-300 rounded-none focus:outline-none focus:ring focus:border-blue-300"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label for="checkout" class="block mb-2">Check-out</label>
+                <input
+                  type="text"
+                  id="datepicker2"
+                  class="w-full px-3 py-2 border text-black border-gray-300 rounded-none focus:outline-none focus:ring focus:border-blue-300"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label for="adults" class="block mb-2">Adults(18+)</label>
+                <select
+                  id="adults"
+                  name="adults"
+                  class="w-full px-3 py-2 border text-black border-gray-300 rounded-none focus:outline-none focus:ring focus:border-blue-300"
+                >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label for="kids" class="block mb-2">Kids(16+)</label>
+                <select
+                  id="kids"
+                  name="kids"
+                  class="w-full px-3 py-2 border text-black border-gray-300 rounded-none focus:outline-none focus:ring focus:border-blue-300"
+                >
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+
+              <div class="col-span-2">
+                <button
+                  type="submit"
+                  class="w-36 uppercase text-white px-2 py-2 rounded-md bg-blue-700"
+                >
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="bg-stone-700 hidden md:grid justify-items-center mt-2">
+        <div class="pt-10">
+          <img class="h-16" src="/Footer/logo-sm.gif" alt="" />
+        </div>
+        <div class="flex pt-10 gap-9">
+          <img class="w-24" src="/Footer/hotel.gif" alt="" />
+          <img class="w-32" src="/Footer/CTW.gif" alt="" />
+        </div>
+        <div class="p-5 md:pt-10">
+          <img src="/Footer/Awards.gif" alt="" />
+        </div>
+        <div class="flex text-sm text-white pt-8">
+          <p class="text-center">
+            <a href="/" class="hover:text-gray-300 m-2">ROOMS</a>
+            <a href="/Pages/Experiance.html" class="hover:text-gray-300 m-2"
+              >EXPERIENCE</a
+            >
+            <a href="/Pages/The-Vineyard.html" class="hover:text-gray-300 m-2"
+              >THE VINEYARD</a
+            >
+            <a href="/" class="hover:text-gray-300 m-2">PHOTOS</a>
+            <a href="/" class="hover:text-gray-300 m-2">THE INN</a>
+            <a href="/" class="hover:text-gray-300 m-2">AMENITIES</a>
+            <a href="/" class="hover:text-gray-300 m-2">OFFERS</a>
+            <a href="/" class="hover:text-gray-300 m-2">BLOG</a>
+            <a href="/" class="hover:text-gray-300 m-2">FAQS</a>
+            <a href="/" class="hover:text-gray-300 m-2">POLICIES </a>
+            <a href="/" class="hover:text-gray-300 m-2">CONTACT</a>
+          </p>
+        </div>
+        <div
+          class="pt-8 pb-16 flex flex-col md:flex-row text-center text-sm text-white font-thin"
+        >
+          <div>
+            <p>© 2023 The Nobnocket Boutique Inn</p>
+          </div>
+          <div class="px-1 hidden md:flex">/</div>
+          <div>Cape Cod Web Design by Community Web Development Inc</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/JS/script.js"></script>
+  </body>
+</html>

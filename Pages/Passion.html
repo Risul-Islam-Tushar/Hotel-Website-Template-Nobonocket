@@ -76,14 +76,14 @@
         </div>
       </nav>
       <div>
-        <!-- large screen -->
+        <!----------------- large screen ------------------>
         <div class="max-w-4xl ml-auto mr-auto uppercase text-prime my-3">
           <ul class="md:flex justify-between text-xl hidden font-light px-6">
             <li><a href="/">ROOMS</a></li>
             <li><a href="/Pages/Experiance.html">EXPERIENCE</a></li>
             <li><a href="/Pages/The-Vineyard.html">THE VINEYARD</a></li>
-            <li><a href="/">PHOTOS</a></li>
-            <li><a href="/">CHECK AVAILABILITY</a></li>
+            <li><a href="/Pages/Photos.html">PHOTOS</a></li>
+            <li><a href="/Pages/Availability.html">CHECK AVAILABILITY</a></li>
             <li id="more_btn_l">
               <div class="flex justify-between items-center">
                 More
@@ -102,7 +102,7 @@
               </div>
             </li>
           </ul>
-          <!-- for small screen -->
+          <!----------------- for small screen -------------->
           <div id="more_btn_s">
             <div
               class="flex md:hidden justify-around items-center text-xl max-w-[100px] ml-auto mr-auto"
@@ -134,9 +134,11 @@
             <div class="md:hidden block py-2">
               <a href="/Pages/The-Vineyard.html">THE VINEYARD</a>
             </div>
-            <div class="md:hidden block py-2"><a href="/">PHOTOS</a></div>
             <div class="md:hidden block py-2">
-              <a href="/">CHECK AVAILABILITY</a>
+              <a href="/Pages/Photos.html">PHOTOS</a>
+            </div>
+            <div class="md:hidden block py-2">
+              <a href="/Pages/Availability.html">CHECK AVAILABILITY</a>
             </div>
             <div class="py-2"><a href="#">EXPLORE THE INN</a></div>
             <div class="py-2"><a href="#">AMENITIES & SERVICES</a></div>
@@ -153,48 +155,47 @@
         </div>
       </div>
     </header>
+
     <main>
       <!-----------------Text Container for large screen ------------->
       <div class="hidden md:flex">
         <div class="font bg-blue-900 h-40 mb-1 w-full">
-          <h1 class="text-4xl font-bold text-white text-center pt-4 pb-4">
-            AMENITIES & SERVICES
+          <h1 class="text-4xl font-bold text-white text-center pt-4 pb-8">
+            EXPERIENCE
           </h1>
           <div class="max-w-6xl mx-auto"><hr /></div>
-          <h4 class="text-center text-white pt-4 text-base">
-            Delivering service excellence and serenity in a relaxing hideaway.
-            Winner of Condé Nast Readers' Choice Award 2022 in "Best North-East
-            USA Hotels" category.
+          <h4 class="text-center text-white pt-4 text-2xl">
+            More a home than a hotel, a stylish sanctuary on Martha's Vineyard
           </h4>
         </div>
       </div>
 
       <!------------------ Text Container for small screen ------------>
       <div class="flex md:hidden">
-        <div class="bg-blue-900 h-60 my-2 font p-4">
-          <h1 class="text-3xl font-bold text-white text-center pb-4">
-            AMENITIES & SERVICES
+        <div class="bg-blue-900 h-40 my-2 font p-4">
+          <h1 class="text-2xl font-bold text-white text-center pb-7">
+            EXPERIENCE
           </h1>
           <div class="mx-auto w-64"><hr /></div>
-          <h4 class="text-center text-white pt-2 text-base">
-            Delivering service excellence and serenity in a relaxing hideaway.
-            Winner of Condé Nast Readers' Choice Award 2022 in "Best North-East
-            USA Hotels" category.
+          <h4 class="text-center text-white pt-4 text-base">
+            More a home than a hotel, a stylish sanctuary on Martha's Vineyard
           </h4>
         </div>
       </div>
+
       <!--------------------------- Grid section-1 --------------------------->
       <div class="flex justify-between flex-col md:flex-row mt-2">
         <!---------- Image Container ---------->
         <div class="card-container md:w-2/3 w-full mr-2">
           <div class="card">
-            <div
-              class="front"
-              style="background-image: url('/assets/pleasure.jpg')"
-            >
-              <div class="front-content flex flex-col px-5">
+            <div class="front" style="background-image: url('/assets/Hat.jpg')">
+              <div class="front-content flex flex-col">
                 <hr />
-                <div class="text-3xl">PLEASURE</div>
+                <div class="text-2xl md:text-3xl font-light">
+                  “SOMETIMES THE MOST RELAXING JOURNEY IS A SOLO ONE” –
+                </div>
+                <hr />
+                <div class="text-2xl md:text-3xl font-light">ROBERT FROST</div>
                 <hr />
               </div>
             </div>
@@ -203,21 +204,32 @@
         <!--------- text Container ---------->
         <div class="card-container md:w-1/3 w-full">
           <div class="card">
-            <div
-              class="front bg-lime-700 flex flex-col text-white pe-0 md:pe-20"
-            >
-              <ul class="text-base" style="list-style-type: square">
-                <li>Daily gourmet breakfast</li>
-                <li>Beach towels</li>
-                <li>Beach chairs</li>
-                <li>Complimentary bikes</li>
-                <li>In-room Nespresso Coffee Machines</li>
-                <li>Secluded location</li>
-                <li>Locally roasted organic coffee</li>
-                <li>Sun patios</li>
-                <li>Complimentary hot & cold drinks</li>
-                <li>DVD library, TV, games and books</li>
-                <li>In-room massages</li>
+            <div class="front bg-emerald-700 flex flex-col text-white">
+              <h1 class="md:text-lg lg:text-2xl">SOLO TRAVELER</h1>
+              <h3 class="md:text-sm lg:text-lg pb-2 font-bold">ONE SPIRIT</h3>
+
+              <ul
+                class="md:text-xs lg:text-sm text-sm px-10"
+                style="list-style-type: square"
+              >
+                <li>Martha’s Vineyard is a safe and friendly island</li>
+                <li>
+                  Insider tips to local restaurants that are solo traveler
+                  friendly
+                </li>
+                <li>
+                  Airport pick-up and drop-off on request for solo travelers
+                </li>
+                <li>
+                  Indoor and outdoor sitting areas for relaxing and book reading
+                </li>
+                <li>Concierge service to help book trips or plan your day</li>
+                <li>Quiet beaches or busy beaches, whichever you prefer</li>
+                <li>Group workshops and tours available</li>
+                <li>
+                  Join locals for Pizza Night under the stars at Orange Peel
+                  Bakery
+                </li>
               </ul>
             </div>
           </div>
@@ -229,17 +241,27 @@
         <!-------------- Text Container-------------->
         <div class="card-container md:w-1/3 w-full">
           <div class="card">
-            <div class="front bg-neutral-400 flex flex-col text-white p-8">
-              <ul class="text-base" style="list-style-type: square">
-                <li>Sumptuous beds</li>
-                <li>Frette luxury linens</li>
-                <li>Gilchrist & Soames "London Collection" toiletries</li>
-                <li>In-room air-conditioning</li>
-                <li>Fireplaces</li>
-                <li>Expansive guest common areas</li>
-                <li>Cozy Bath Robes</li>
-                <li>Hairdryer</li>
-                <li>Turndown service</li>
+            <div class="front bg-zinc-700 flex flex-col text-white p-5">
+              <h1 class="md:text-lg lg:text-2xl">SUSTAINABLE TRAVELER</h1>
+              <h3 class="md:text-sm lg:text-lg pb-2 font-bold">ONE WORLD</h3>
+              <ul
+                class="md:text-xs lg:text-sm text-sm px-6"
+                style="list-style-type: square"
+              >
+                <li>
+                  Serving local (Chilmark Coffee, Grey Barn Farm, Shephard’s
+                  Provisions, Black Dog Bakery)
+                </li>
+                <li>
+                  Selling local (Flat Point Farm, Stefanie Wolf, MV Sea Salt,
+                  Barbara Reynolds cards)
+                </li>
+                <li>“Island Housing Trust” matching donation program</li>
+                <li>Recycling and “Clean The World” program</li>
+                <li>Selected to be part of the "+ImpactTravel" Collection</li>
+                <li>Water conservation program</li>
+                <li>“Go Green” Package available (bikes and bus passes)</li>
+                <li>Refillable “Nobnocket” water bottles</li>
               </ul>
             </div>
           </div>
@@ -249,11 +271,11 @@
           <div class="card">
             <div
               class="front"
-              style="background-image: url('/assets/Comfort.jpg')"
+              style="background-image: url('/assets/sea-shell.jpg')"
             >
               <div class="front-content flex flex-col px-5">
                 <hr />
-                <div class="text-3xl">COMFORT</div>
+                <div class="text-3xl">LOCAL, CONSERVE, PRESERVE</div>
                 <hr />
               </div>
             </div>
@@ -268,11 +290,11 @@
           <div class="card">
             <div
               class="front"
-              style="background-image: url('/assets/convineance.jpg')"
+              style="background-image: url('/assets/sea-shell-2.jpg')"
             >
               <div class="front-content flex flex-col px-5">
                 <hr />
-                <div class="text-3xl">THE TWIST</div>
+                <div class="text-3xl">RELAX, REVIVE, RENEW</div>
                 <hr />
               </div>
             </div>
@@ -281,24 +303,24 @@
         <!--------------- text Container --------------->
         <div class="card-container md:w-1/3 w-full">
           <div class="card">
-            <div class="front bg-zinc-600 flex flex-col text-white p-8">
+            <div class="front bg-neutral-400 flex flex-col text-white p-5">
+              <h1 class="md:text-lg lg:text-2xl">SPA TRAVELER</h1>
+              <h3 class="md:text-sm lg:text-lg pb-2 font-bold">ONE YOU</h3>
               <ul
-                class="text-sm md:text-sm pl-5"
+                class="md:text-xs lg:text-sm text-sm px-6"
                 style="list-style-type: square"
               >
-                <li>Close to ferry</li>
-                <li>Free on-site parking</li>
-                <li>Complimentary WiFi</li>
-                <li>Bluetooth speaker/radio</li>
-                <li>Close to restaurants & shops</li>
-                <li>Baggage assistance</li>
-                <li>Personalized concierge service</li>
+                <li>In-room massages</li>
+                <li>Yoga mats available (yoga classes upon request)</li>
+                <li>Extensive outdoor gardens with secluded seating areas</li>
+                <li>En-suite breakfast</li>
+                <li>Luxury Frette linens and spa bathrobes and slippers</li>
                 <li>
-                  Gift Shop with local items (Cut Paper Island tea towels, local
-                  books, Stefanie Wolf jewelry, candles, cards)
+                  Partner with Revive Salon for all-natural face and body
+                  treatments
                 </li>
-                <li>Close to Beach Road Weekend music festival venue</li>
-                <li>Close to Martha's Vineyard Museum</li>
+                <li>Soothing lavender mist pillow sprays</li>
+                <li>Book a private sailing charter</li>
               </ul>
             </div>
           </div>
@@ -306,49 +328,6 @@
       </div>
 
       <!--------------------------- Grid section-4 --------------------------->
-      <div class="flex justify-between flex-col md:flex-row mt-2">
-        <!--------------Image Container -------------->
-        <div class="card-container md:w-1/3 w-full">
-          <div class="card">
-            <div class="front bg-neutral-400 flex flex-col text-white"></div>
-          </div>
-        </div>
-        <!------------- Text Container ------------->
-        <div class="card-container md:w-2/3 h-full w-full ml-2">
-          <div class="card">
-            <h1 class="text-3xl font-light md:my-0 lg:my-2">ABOUT US</h1>
-            <p class="text-base md:text-xs lg:text-base font-extralight pe-8">
-              Annabelle and Simon are "wash-ashores" from England via Cape Cod.
-              Annabelle is originally from London and Simon is from Liverpool.
-              They created and developed an award winning Boutique Inn on Cape
-              Cod that won Boston Magazine's prestigious "Best Of Boston" award
-              for "Best Hotel/Inn on Cape Cod" as well as awards and recognition
-              from other leading travel publications. Here they discovered a gem
-              of a building that they were able to turn into their vision of
-              "island luxury with a twist", a modern Martha's Vineyard B&B
-              within a stately Arts & Crafts manor house. One of the draws was
-              its unique location. Situated a short walk from the ferry and
-              downtown Vineyard Haven it is hidden away in a secluded retreat
-              surrounded by gardens, trees and the sound of songbirds. They
-              purchased the inn January 2016 and set about completely renovating
-              the interiors. In May 2016 it reopened as Nobnocket Boutique Inn,
-              an upscale Boutique Hotel design property. The inn has won
-              accolades from Condé Nast, Condé Nast Johansens, Yankee Magazine,
-              Boston Globe and Boston Magazine. They are owner operators and
-              live on property to be able to give you personalized and truly
-              local service and to be able to live their dream of a life on
-              Martha's Vineyard.
-              <br />
-              <br />
-              Simon is an avid Liverpool FC supporter and Annabelle's allegiance
-              is with Chelsea FC, which leads to at least two difficult days
-              each year!
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!--------------------------- Grid Section-5 --------------------------->
       <div class="grid md:grid-cols-3 grid-cols-1 gap-2 mt-2">
         <div class="bg-cyan-800 p-10 text-white">
           <div class="pb-4 text-xl font-medium">
@@ -521,7 +500,6 @@
         </div>
       </div>
     </main>
-
     <footer>
       <div class="bg-stone-700 grid justify-items-center mt-2">
         <div class="pt-10">
@@ -534,7 +512,7 @@
         <div class="p-5 md:pt-10">
           <img src="/Footer/Awards.gif" alt="" />
         </div>
-        <div class="flex text-sm text-white pt-8 mx-8">
+        <div class="flex text-sm text-white pt-8">
           <p class="text-center">
             <a href="/" class="hover:text-gray-300 m-2">ROOMS</a>
             <a href="/Pages/Experiance.html" class="hover:text-gray-300 m-2"
@@ -543,7 +521,9 @@
             <a href="/Pages/The-Vineyard.html" class="hover:text-gray-300 m-2"
               >THE VINEYARD</a
             >
-            <a href="/" class="hover:text-gray-300 m-2">PHOTOS</a>
+            <a href="/Pages/Photos.html" class="hover:text-gray-300 m-2"
+              >PHOTOS</a
+            >
             <a href="/" class="hover:text-gray-300 m-2">THE INN</a>
             <a href="/" class="hover:text-gray-300 m-2">AMENITIES</a>
             <a href="/" class="hover:text-gray-300 m-2">OFFERS</a>
