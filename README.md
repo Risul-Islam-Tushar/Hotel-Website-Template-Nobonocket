@@ -3,7 +3,7 @@
 # Tech Stack
 -HTML
 -CSS
--TAILWIND-CSS
+-Tailwind CSS
 -Java Script
 
 ## Features
