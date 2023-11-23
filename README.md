@@ -1,10 +1,10 @@
-########################## Hotel-Website-Template########################
-# Tech Stack
+-------------------------------- Hotel-Website-Template---------------------------
 
+# Tech Stack
 -HTML
 -CSS
 -TAILWIND-CSS
--JS
+-Java Script
 
 ## Features
 
