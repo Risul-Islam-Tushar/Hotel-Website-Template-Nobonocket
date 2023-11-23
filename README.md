@@ -8,11 +8,11 @@
 
 ## Features
 
-- Responsive design for various screen sizes
-- Modern and elegant user interface
-- Interactive booking and reservation forms
-- Stunning image galleries and sliders
-- Smooth animations and transitions
+- Responsive design for various screen sizes.
+- Modern and elegant user interface.
+- Interactive booking and reservation forms.
+- Stunning image galleries and sliders.
+- Smooth animations and transitions.
 
 ## Contributing
 
